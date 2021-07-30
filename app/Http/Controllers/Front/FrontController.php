@@ -18,6 +18,15 @@ class FrontController extends Controller
     public function course_view(){
         return view('front.course');
     }
+    public function course_details_view(){
+        return view('front.course_details');
+    }
+    public function department_view(){
+        return view('front.department');
+    }
+    public function department_details_view(){
+        return view('front.department_details');
+    }
     public function contact_view(){
         return view('front.contact');
     }

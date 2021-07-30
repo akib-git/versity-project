@@ -8,35 +8,36 @@
             <div class="container">
                 <div class="row y-middle">
                     <div class="col-lg-2">
-                      <div class="logo-cat-wrap">
-                          <div class="logo-part">
-                              <a href="{{url('/')}}">
-                                  <img src="{{asset('assets/front/images/logo-dark.png') }}" alt="">
-                              </a>
-                          </div>
-                      </div>
+                        <div class="logo-cat-wrap">
+                            <div class="logo-part">
+                                <a href="{{url('/')}}">
+                                    <img src="{{asset('assets/front/images/logo-dark.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-7 text-right">
                         <div class="rs-menu-area">
                             <div class="main-menu">
-                              <div class="mobile-menu">
-                                  <a class="rs-menu-toggle">
-                                      <i class="fa fa-bars"></i>
-                                  </a>
-                              </div>
-                              <nav class="rs-menu">
-                                 <ul class="nav-menu">
-                                    <li class="@yield('index_menu_active')"> <a href="{{url('/')}}">Home</a>
-                                    </li>
-                                     <li class="@yield('about_menu_active')">
-                                         <a href="{{url('/about')}}">About</a>
-                                     </li>
-
-                                     <li  class="@yield('course_menu_active')">
-                                         <a href="{{url('/courses')}}">Courses</a>
-                                     </li>
-
-                                     {{-- <li class="menu-item-has-children ">
+                                <div class="mobile-menu">
+                                    <a class="rs-menu-toggle">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+                                <nav class="rs-menu">
+                                    <ul class="nav-menu">
+                                        <li class="@yield('index_menu_active')"> <a href="{{url('/')}}">Home</a>
+                                        </li>
+                                        <li class="@yield('about_menu_active')">
+                                            <a href="{{url('/about')}}">About</a>
+                                        </li>
+                                        <li class="@yield('course_menu_active')">
+                                            <a href="{{url('/courses')}}">Courses</a>
+                                        </li>
+                                        <li class="@yield('department_menu_active')">
+                                            <a href="{{url('/departments')}}">Departments</a>
+                                        </li>
+                                        {{-- <li class="menu-item-has-children ">
                                          <a href="#">Pages</a>
                                          <ul class="sub-menu">
                                              <li>
@@ -56,21 +57,17 @@
                                              </li>
                                          </ul>
                                      </li> --}}
-
-                                     <li class="@yield('blog_menu_active')">
-                                         <a href="{{url('/blog')}}">Blog</a>
-                                             {{-- <li>
+                                        <li class="@yield('blog_menu_active')">
+                                            <a href="{{url('/blog')}}">Blog</a>
+                                            {{-- <li>
                                                  <a href="blog-single.html">Single Post</a>
                                              </li> --}}
-                                     </li>
-
-                                     <li class="@yield('contact_menu_active')">
-                                         <a href="{{url('/contact')}}">Contact</a>
-                                     </li>
-
-
-                                 </ul> <!-- //.nav-menu -->
-                              </nav>
+                                        </li>
+                                        <li class="@yield('contact_menu_active')">
+                                            <a href="{{url('/contact')}}">Contact</a>
+                                        </li>
+                                    </ul> <!-- //.nav-menu -->
+                                </nav>
                             </div> <!-- //.main-menu -->
 
                         </div>
@@ -85,14 +82,14 @@
                                 </li>
 
                                 <li class="">
-                                        <a id="login" class="uppercase  @yield('login_active')">
-                                                        Login
-                                        </a>
+                                    <a id="login" class="uppercase  @yield('login_active')">
+                                        Login
+                                    </a>
                                 </li>
                                 <li class="text-right ">
-                                        <a href="{{url("/register")}}" class="uppercase @yield('register_active')">
-                                                        Register
-                                        </a>
+                                    <a href="{{url("/register")}}" class="uppercase @yield('register_active')">
+                                        Register
+                                    </a>
                                 </li>
                             </ul>
                         </div>
